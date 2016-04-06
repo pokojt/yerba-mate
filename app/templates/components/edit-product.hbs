@@ -1,1 +1,33 @@
-{{yield}}
+{{#if editFormShow}}
+<div class="editProductSection">
+  <h2>Edit Product</h2>
+  <form class="editProductForm">
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      {{input value=product.name id="name" placeholder=product.name}}
+    </div>
+    <div class="form-group">
+      <label for="seller">Seller or Brand Name:</label>
+      {{input value=product.seller id="seller" placeholder=product.seller}}
+    </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=product.image id="image" placeholder=product.image}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      {{textarea value=product.description id="description" placeholder=product.description}}
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      {{input value=product.price id="price" placeholder=product.price}}
+    </div>
+    <button {{action 'editProduct' product}}>Save Edits</button>
+  </form>
+  <button{{action 'toggleEdit'}}>Cancel</button>
+</div>
+{{else}}
+  <div class="editProductSection">
+    <button {{action 'toggleEdit'}}>Edit Product</button>
+  </div>
+{{/if}}
