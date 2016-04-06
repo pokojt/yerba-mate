@@ -4,7 +4,7 @@
 <div class="categoryList">
   {{#each model as |category|}}
   <div class="categoryItem">
-    {{category.name}}
+    {{#link-to 'admin-category' category.id}}<h3 class="categoryLink">{{category.name}}</h3>{{/link-to}}
     {{edit-category category=category editCategory="editCategory"}}
   </div>
   {{/each}}

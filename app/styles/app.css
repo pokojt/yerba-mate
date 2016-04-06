@@ -72,53 +72,62 @@ a:hover {
   width: 48%;
 }
 
-.MateItem {
+.categoryItem {
+  padding: 2%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/plant.jpg");
-  background-size: cover;
   height: 40vh;
   margin: 2%;
+}
+
+.MateItem {
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/plant.jpg");
+  background-size: cover;
 }
 
 .BombillasItem {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/ogmate.jpg");
   background-size: cover;
-  height: 40vh;
-  margin: 2%;
 }
 
 .GourdsItem {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/mate.jpg");
   background-size: cover;
-  height: 40vh;
-  margin: 2%;
 }
 
 .CasesItem {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/artsyMate.jpeg");
   background-size: cover;
-  height: 40vh;
-  margin: 2%;
 }
 
 .shop {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 3px;
+}
 
+button {
+  margin: 2%;
+  border: 1px solid transparent;
+  background: rgba(255,2555,255, .8);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  font-weight: lighter;
+  transition: background 300ms linear;
+}
+
+button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: background 300ms linear;
+}
+
+button:focus {
+  outline: none;
 }
