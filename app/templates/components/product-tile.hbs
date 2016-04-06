@@ -1,0 +1,15 @@
+<div class="categoryProductList">
+    {{#each category.products as |product|}}
+    <div class="categoryProductItem">
+
+        <div class="productImage" style="background: url({{product.image}}) no-repeat center; background-size: contain;">
+
+        </div>
+        <div class="categoryProductContent">
+
+        <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
+        
+      </div>
+    </div>
+    {{/each}}
+</div>
