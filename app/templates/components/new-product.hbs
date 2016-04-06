@@ -1,0 +1,33 @@
+{{#if showForm}}
+<div class="createProductSection">
+  <h2>Add New Product</h2>
+  <form class="createProductForm">
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="seller">Seller or Brand Name</label>
+      {{input value=seller id="seller"}}
+    </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=image id="image"}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description id="description"}}
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      {{input value=price id="price"}}
+    </div>
+    <button {{action 'saveProduct'}}>Save Product</button>
+  </form>
+  <button{{action 'toggleDetail'}}>Cancel</button>
+</div>
+{{else}}
+  <div class="createProductSection">
+    <button class="addNew" {{action 'toggleDetail'}}>Add New Product</button>
+  </div>
+{{/if}}
