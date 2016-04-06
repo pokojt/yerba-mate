@@ -1,1 +1,14 @@
-{{outlet}}
+<h1>Admin</h1>
+<h3 class="view">View, edit, and delete products in each category.</h3>
+
+<div class="categoryList">
+  {{#each model as |category|}}
+  <div class="categoryItem">
+    {{category.name}}
+    <!-- {{edit-category category=category editCategory="editCategory"}} -->
+  </div>
+  {{/each}}
+</div>
+
+
+{{new-category category=category saveCategory="saveCategory"}}
