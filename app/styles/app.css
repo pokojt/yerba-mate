@@ -1,10 +1,14 @@
 body {
   font-family: sans-serif;
+  background: linear-gradient(to right, rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("/img/leaves.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-weight: lighter;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -19,11 +23,22 @@ a:hover {
 .header {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  /*background: url('/img/ogmate.jpg') no-repeat center center fixed;
+  background-size: cover;*/
+  height: 70vh;
+  justify-content: center;
+
 }
 
-.headerText {
-  text-align: center;
+.header h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
 }
+
+
 
 .nav {
   display: flex;
