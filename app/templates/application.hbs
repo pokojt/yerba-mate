@@ -1,3 +1,23 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="pageWrapper">
+  <div class="header">
+    <div class="nav">
+      {{#link-to 'index'}}<span class='logo'>Yerba Logo</span>{{/link-to}}
+      <span class="navLinks">
+        {{#link-to 'admin'}}<p>Admin</p>{{/link-to}}
+        {{#link-to 'about'}}<p>About Mate</p>{{/link-to}}
+        {{#link-to 'cart'}}<p>My Cart</p>{{/link-to}}
+      </span>
+    </div>
+    <div class="headerText">
+      {{#link-to 'index'}}<h1>Yerba</h1>{{/link-to}}
+    </div>
+  </div>
 
-{{outlet}}
+  {{outlet}}
+
+  <div class="footer">
+    <hr>
+    <p>&copy; Taylor Pokoj 2016 | All Rights Reserved</p>
+  </div>
+
+</div>
