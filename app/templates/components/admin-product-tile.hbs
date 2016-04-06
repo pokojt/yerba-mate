@@ -1,9 +1,12 @@
 <div class="categoryProductList">
     {{#each category.products as |product|}}
     <div class="categoryProductItem">
-      <div class="categoryProductImage" style="background: url('{{product.image}}') no-repeat; background-size: cover;">
-      </div>
-      <div class="categoryProductContent">
+
+        <div class="productImage" style="background: url({{product.image}}) no-repeat center; background-size: contain;">
+
+        </div>
+        <div class="categoryProductContent">
+
         <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
         <div class="productBtns">
           {{edit-product product=product editProduct="editProduct"}}

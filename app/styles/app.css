@@ -131,3 +131,32 @@ button:hover {
 button:focus {
   outline: none;
 }
+
+.categoryProductList {
+  display: flex;
+  justify-content: center;
+}
+
+.categoryProductItem {
+  background: rgba(255,255,255, .8);
+  color: black;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  width: 28%;
+}
+
+
+.productImage {
+  height: 40vh;
+}
+
+.productBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createProductSection {
+  text-align: center;
+}
