@@ -3,7 +3,7 @@
 <h2>{{model.name}} <span class="price">${{model.price}}</span></h2>
 <h4>By {{model.seller}}</h4>
 {{#if addedToCart}}
-  <button {{action 'removeFromCart' product}}>Remove from Cart</button>
+  <button {{action 'removeFromCart' model}}>Remove from Cart</button>
 {{else}}
   <button {{action 'addToCart' model }}>Add to Cart</button>
 {{/if}}

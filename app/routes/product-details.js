@@ -5,9 +5,9 @@ export default Ember.Route.extend({
   addedToCart: false,
   actions: {
     addToCart(product) {
-      alert("helloooooo");
-      this.set('addedToCart', true);
+      alert("Added!");
       this.get('shoppingCart').add(product);
+      this.set('addedToCart', true);
     },
     removeFromCart(product) {
       this.set('addedToCart', false);
