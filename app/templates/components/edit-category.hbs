@@ -1,0 +1,17 @@
+{{#if editCategoryShow}}
+<div class="editCategorySection">
+  <h2>Edit category</h2>
+  <form class="editPostForm">
+    <div class="form-group">
+      <label for="name">Category Name</label>
+      {{input value=category.name id="category" placeholder=category.name}}
+    </div>
+    <button class="addNew2" {{action 'editCategory' category}}>Save Edits</button>
+  </form>
+  <button{{action 'toggleEdit'}}>Cancel</button>
+</div>
+{{else}}
+  <div class="editCategorySection">
+    <button {{action 'toggleEdit'}}>Edit Category</button>
+  </div>
+{{/if}}
