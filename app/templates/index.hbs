@@ -5,6 +5,9 @@
   </div>
 </div>
 
-{{#each model as |category|}}
-{{#link-to 'category' category.id}}{{category-tile category=category}}{{/link-to}}
-{{/each}}
+<div class="categoryList">
+  {{#each model as |category|}}
+  {{#link-to 'category' category.id}}{{category-tile category=category}}{{/link-to}}
+  {{/each}}
+
+</div>

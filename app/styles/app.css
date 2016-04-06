@@ -34,7 +34,7 @@ a:hover {
 .header h1 {
   font-weight: lighter;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 40px;
 }
 
@@ -60,4 +60,65 @@ a:hover {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoryList > .ember-view {
+  width: 48%;
+}
+
+.MateItem {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/plant.jpg");
+  background-size: cover;
+  height: 40vh;
+  margin: 2%;
+}
+
+.BombillasItem {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/ogmate.jpg");
+  background-size: cover;
+  height: 40vh;
+  margin: 2%;
+}
+
+.GourdsItem {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/mate.jpg");
+  background-size: cover;
+  height: 40vh;
+  margin: 2%;
+}
+
+.CasesItem {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/artsyMate.jpeg");
+  background-size: cover;
+  height: 40vh;
+  margin: 2%;
+}
+
+.shop {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+
 }
