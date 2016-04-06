@@ -1,6 +1,7 @@
 <div class="categoryProductList">
     {{#each category.products as |product|}}
-    <div class="categoryProductItem">
+    {{#link-to 'product-details' product.id}}
+    <div class="userProductItem">
 
         <div class="productImage" style="background: url({{product.image}}) no-repeat center; background-size: contain;">
 
@@ -8,8 +9,8 @@
         <div class="categoryProductContent">
 
         <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
-        
+
       </div>
-    </div>
+    </div>{{/link-to}}
     {{/each}}
 </div>
