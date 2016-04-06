@@ -6,6 +6,10 @@ body {
   font-weight: lighter;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -26,7 +30,7 @@ a:hover {
   text-align: center;
   /*background: url('/img/ogmate.jpg') no-repeat center center fixed;
   background-size: cover;*/
-  height: 70vh;
+  height: 100vh;
   justify-content: center;
 
 }
@@ -60,6 +64,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
+  margin: 4%;
 }
 
 .categoryList {
@@ -159,4 +164,8 @@ button:focus {
 
 .createProductSection {
   text-align: center;
+}
+
+.detailImage {
+  height: 40vh;
 }
