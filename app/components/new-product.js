@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         image: this.get('image') ? this.get('image'): "",
         description: this.get('description') ? this.get('description'): "",
         price: this.get('price') ? this.get('price'): "",
-        // reviews: this.get('reviews'),
+        // review: this.get('review'),
     };
       this.toggleProperty('showForm');
       this.set('name', "");
