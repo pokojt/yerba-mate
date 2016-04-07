@@ -35,6 +35,7 @@
 
 .categoryProductList {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -49,5 +50,5 @@
 
 
 .productImage {
-  height: 40vh;
+  height: 25vh;
 }

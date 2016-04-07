@@ -8,7 +8,9 @@
         </div>
         <div class="userProductContent">
 
-        <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
+        <h4 class="userproductName">{{product.name}}</h4>
+        <p class="userSeller">By {{product.seller}}</p>
+        <h3 class="userPrice">${{product.price}}</h3>
 
       </div>
     </div>{{/link-to}}
