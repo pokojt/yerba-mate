@@ -1,8 +1,8 @@
 TO DO:
 
 
-- add reviews to product-detail page
-- add favorite button to items (service my-favorites)
+- add date to reviews
+- change review rating to stars?
 - fix button on detail page so remove from cart button pops up after adding
 
 
