@@ -5,3 +5,5 @@ TO DO:
 
 
 - style more, add sass
+
+*** review stars still not working. it lets you add the right rating and appends the right number of stars, but when you refresh it goes down to one :(

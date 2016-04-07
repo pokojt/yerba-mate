@@ -1,8 +1,11 @@
-<ul>
-{{#each shoppingCart.products as |product|}}
-  {{#link-to 'product-details' product.id}}<li>{{product.name}} -- ${{product.price}}</li>{{/link-to}}
-  <button {{action 'removeFromCart' product}}>X</button>
-{{/each}}
-</ul>
+<div class="cartList">
 
-<h5>Total Price: ${{total-price shoppingCart.products shoppingCart.products.length}}</h5>
+    {{#each shoppingCart.products as |product|}}
+    {{#link-to 'product-details' product.id}}<h4>{{product.name}} -- ${{product.price}}</h4>{{/link-to}}
+    <button class="removeItemButton"{{action 'removeFromCart' product}}>Remove</button>
+    {{/each}}
+
+  <h5>Total Price: ${{total-price shoppingCart.products shoppingCart.products.length}}</h5>
+  <button>Checkout</button>
+
+</div>

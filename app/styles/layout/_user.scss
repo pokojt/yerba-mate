@@ -108,3 +108,24 @@
 .detailImage {
   height: 40vh;
 }
+
+.cartList {
+  background: rgba(255,255,255, .5);
+  color: black;
+  padding: 2%;
+  width: 50%;
+  margin: 0 auto;
+  list-style-style: none;
+  h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 3px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  button {
+    margin: 0px;
+  }
+}
