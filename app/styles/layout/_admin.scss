@@ -1,0 +1,53 @@
+// styles for admin pages //
+
+
+.adminCategoryItem {
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  width: 40%;
+  background: rgba(0,0,0, .5);
+}
+
+.adminCategoryItem h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid transparent;
+  margin: 5px;
+  transition: border-bottom 500ms linear;
+}
+
+.adminCategoryItem h3:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 200ms linear;
+}
+
+.createCategorySection {
+  text-align: center;
+}
+
+.createProductSection {
+  text-align: center;
+}
+
+
+.categoryProductList {
+  display: flex;
+  justify-content: center;
+}
+
+.categoryProductItem {
+  background: rgba(255,255,255, .8);
+  color: black;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  width: 28%;
+}
+
+
+.productImage {
+  height: 40vh;
+}

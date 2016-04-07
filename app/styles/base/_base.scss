@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/**
+ * Basic styles for links
+ */
+
+ body {
+   font-family: sans-serif;
+   background: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/img/leaves.jpg") no-repeat center center fixed;
+   background-size: cover;
+   color: white;
+   font-weight: lighter;
+ }
+
+ body::-webkit-scrollbar {
+   display: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: white;
+   &:hover {
+     cursor: pointer;
+   }
+ }
+
+
+
+ .pageWrapper {
+   width: 95%;
+   margin: 0 auto;
+ }

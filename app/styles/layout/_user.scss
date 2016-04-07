@@ -1,0 +1,58 @@
+// Styles for user interface pages //
+
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoryList > .ember-view {
+  width: 48%;
+}
+
+.categoryItem {
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 2%;
+}
+
+.MateItem {
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/plant.jpg");
+  background-size: cover;
+}
+
+.BombillasItem {
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/ogmate.jpg");
+  background-size: cover;
+}
+
+.GourdsItem {
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/mate.jpg");
+  background-size: cover;
+}
+
+.CasesItem {
+  background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/artsyMate.jpeg");
+  background-size: cover;
+}
+
+.shop {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 500ms linear;
+  &:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 300ms linear;
+  }
+}
+
+.detailImage {
+  height: 40vh;
+}

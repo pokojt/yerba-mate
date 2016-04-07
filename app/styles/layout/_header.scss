@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
+  i {
+    opacity: .7;
+    font-size: 25px;
+    position: absolute;
+    left: 49%;
+  }
+  .lead {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-bottom: 100px;
+  }
+}

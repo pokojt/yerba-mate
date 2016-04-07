@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+
+.navLinks {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  i {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+}
+
+
+.navLinks > .ember-view {
+  margin-left: 10%;
+  text-align: right;
+}
+.cartCount {
+  border-radius: 50%;
+  background: #70705A;
+  width: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17px;
+  text-align: center;
+  position: relative;
+  right: -100%;
+  margin-top: -8px;
+}
