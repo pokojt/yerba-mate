@@ -8,15 +8,13 @@ export default Ember.Component.extend({
     },
     saveReview() {
       var date = new Date();
-      var time = date.toString().substring(16, 24);
       date = date.toString().substring(4, 15);
-       var dateAndTime = date + ' ' + time;
-      var momentDateAndTime = moment(dateAndTime).format('MM/DD/YYYY hh:mm:ss a');
+      var momentDate = moment(date).format('MM/DD/YYYY');
       var formInputs = {
         rating: this.get('rating') ? this.get('rating'): "",
         author: this.get('author') ? this.get('author'): "",
         content: this.get('content') ? this.get('content'): "",
-        date: momentDateAndTime,
+        date: momentDate,
         product: this.get('product'),
     };
       this.toggleProperty('addReview');
