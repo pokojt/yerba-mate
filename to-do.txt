@@ -1,0 +1,8 @@
+TO DO:
+
+- Get price to update when deleting an item from cart
+- add reviews to product-detail page
+- add favorite button to items (service my-favorites)
+
+
+- style more

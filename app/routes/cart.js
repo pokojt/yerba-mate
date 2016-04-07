@@ -7,6 +7,7 @@ export default Ember.Route.extend({
   actions: {
     removeFromCart(product) {
       this.get('shoppingCart').remove(product);
+      this.refresh('shoppingCart.products');
     }
   }
 });
