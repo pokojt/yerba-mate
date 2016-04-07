@@ -55,8 +55,27 @@ a:hover {
 
 .navLinks {
   display: flex;
-  width: 30%;
+  width: 40%;
   justify-content: space-between;
+}
+
+.navLinks > .ember-view {
+  width: 30%;
+  display: flex;
+}
+.cartCount {
+  border-radius: 50%;
+  background: #70705A;
+  /*color: gray;*/
+  width: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17px;
+  text-align: center;
+  position: absolute;
+  right: 5%;
+  top: 5%;
 }
 
 .footer {
@@ -88,6 +107,52 @@ a:hover {
   margin: 2%;
 }
 
+.adminCategoryItem {
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  width: 40%;
+  background: rgba(0,0,0, .5);
+}
+
+.adminCategoryItem h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid transparent;
+  margin: 5px;
+  transition: border-bottom 500ms linear;
+}
+
+.adminCategoryItem h3:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 200ms linear;
+}
+
+#editCategoryButton, .cancelEdit, .addNew2 {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+#editCategoryButton:hover, .cancelEdit:hover, .addNew2:hover {
+  background: rgba(255,255,255, .8);
+  color: black;
+  border: 1px solid transparent;
+  transition: none;
+}
+
+#addNewCategory {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.createCategorySection {
+  text-align: center;
+}
+
 .MateItem {
   background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("/img/plant.jpg");
   background-size: cover;
@@ -112,6 +177,13 @@ a:hover {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 500ms linear;
+}
+
+.shop:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 300ms linear;
 }
 
 button {

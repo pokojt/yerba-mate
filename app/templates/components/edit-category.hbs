@@ -8,10 +8,10 @@
     </div>
     <button class="addNew2" {{action 'editCategory' category}}>Save Edits</button>
   </form>
-  <button{{action 'toggleEdit'}}>Cancel</button>
+  <button class="cancelEdit"{{action 'toggleEdit'}}>Cancel</button>
 </div>
 {{else}}
   <div class="editCategorySection">
-    <button {{action 'toggleEdit'}}>Edit Name</button>
+    <button id="editCategoryButton"{{action 'toggleEdit'}}>Edit Name</button>
   </div>
 {{/if}}

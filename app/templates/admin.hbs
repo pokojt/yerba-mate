@@ -1,14 +1,13 @@
 <h1>Admin</h1>
-<h3 class="view">View, edit, and delete products in each category.</h3>
+<h3 class="view">Click to view, edit, and delete products in each category.</h3>
+
+{{new-category category=category saveCategory="saveCategory"}}
 
 <div class="categoryList">
   {{#each model as |category|}}
-  <div class="categoryItem">
+  <div class="adminCategoryItem">
     {{#link-to 'admin-category' category.id}}<h3 class="categoryLink">{{category.name}}</h3>{{/link-to}}
     {{edit-category category=category editCategory="editCategory"}}
   </div>
   {{/each}}
 </div>
-
-
-{{new-category category=category saveCategory="saveCategory"}}
