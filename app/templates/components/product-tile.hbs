@@ -1,12 +1,12 @@
-<div class="categoryProductList">
+<div class="usercategoryProductList">
     {{#each category.products as |product|}}
     {{#link-to 'product-details' product.id}}
     <div class="userProductItem">
 
-        <div class="productImage" style="background: url({{product.image}}) no-repeat center; background-size: contain;">
+        <div class="userProductImage" style="background: url({{product.image}}) no-repeat center; background-size: cover;">
 
         </div>
-        <div class="categoryProductContent">
+        <div class="userProductContent">
 
         <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
 

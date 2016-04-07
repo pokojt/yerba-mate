@@ -6,6 +6,7 @@
   justify-content: center;
 }
 
+
 .categoryList > .ember-view {
   width: 48%;
 }
@@ -53,6 +54,26 @@
   }
 }
 
+.usercategoryProductList {
+  display: flex;
+  justify-content: center;
+  > .ember-view {
+    width: 30%;
+  }
+  .userProductItem {
+    color: black;
+    background: white;
+    margin: 2%;
+    height: 42vh;
+    .userProductImage {
+      height: 30vh;
+    }
+    .userProductContent {
+      padding: 3%;
+      font-weight: lighter;
+    }
+  }
+}
 .detailImage {
   height: 40vh;
 }
