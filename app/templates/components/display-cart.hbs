@@ -1,8 +1,8 @@
 <ul>
 {{#each shoppingCart.products as |product|}}
-  <li>{{product.name}} -- ${{product.price}}</li>
+  {{#link-to 'product-details' product.id}}<li>{{product.name}} -- ${{product.price}}</li>{{/link-to}}
   <button {{action 'removeFromCart' product}}>X</button>
 {{/each}}
 </ul>
 
-<!-- <h5>Total Price: {{total-price shoppingCart.products}}</h5> -->
+<h5>Total Price: ${{total-price shoppingCart.products}}</h5>

@@ -42,6 +42,13 @@ a:hover {
   font-size: 40px;
 }
 
+.header i {
+  opacity: .7;
+  font-size: 25px;
+  position: absolute;
+  left: 49%;
+}
+
 .lead {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -59,15 +66,22 @@ a:hover {
   font-size: 14px;
 }
 
+
 .navLinks {
   display: flex;
-  width: 40%;
-  justify-content: space-between;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLinks i {
+  font-size: 22px;
+  padding-top: 5px;
 }
 
 .navLinks > .ember-view {
-  width: 30%;
-  display: flex;
+  margin-left: 10%;
+  text-align: right;
 }
 .cartCount {
   border-radius: 50%;

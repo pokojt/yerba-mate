@@ -3,9 +3,8 @@
     <div class="nav">
       {{#link-to 'index'}}<span class='logo'>Yerba Logo</span>{{/link-to}}
       <span class="navLinks">
-        {{#link-to 'admin'}}<p>Admin</p>{{/link-to}}
         {{#link-to 'about'}}<p>About Mate</p>{{/link-to}}
-        {{#link-to 'cart'}}<p>My Cart{{cart-count}}</p>{{/link-to}}
+        {{#link-to 'cart'}}<span><i class="fa fa-shopping-cart"></i>{{cart-count}}</span>{{/link-to}}
       </span>
     </div>
 
@@ -15,6 +14,7 @@
 
   <div class="footer">
     <hr>
+      {{#link-to 'admin'}}<p>Admin</p>{{/link-to}}
     <p>&copy; Taylor Pokoj 2016 | All Rights Reserved</p>
   </div>
 
