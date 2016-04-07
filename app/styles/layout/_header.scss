@@ -11,15 +11,20 @@
   justify-content: center;
   h1 {
     font-weight: lighter;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 40px;
+    font-size: 90px;
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 0;
   }
+
+
   i {
     opacity: .7;
     font-size: 25px;
     position: absolute;
     left: 49%;
+    top: 92vh;
   }
   .lead {
     text-transform: uppercase;

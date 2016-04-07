@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       date = date.toString().substring(4, 15);
       var momentDate = moment(date).format('MM/DD/YYYY');
       var formInputs = {
-        rating: this.get('rating') ? this.get('rating'): "",
+        rating: this.get('rating'),
         author: this.get('author') ? this.get('author'): "",
         content: this.get('content') ? this.get('content'): "",
         date: momentDate,

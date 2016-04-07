@@ -1,15 +1,16 @@
 import Ember from 'ember';
 
 export function reviewRating(params) {
-  var reviewRating = params[0].get('rating');
+  var rating = params[0].get('rating');
 
-  if(reviewRating = "5") {
+  if(rating == "5 stars") {
+    debugger;
     return Ember.String.htmlSafe('<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>');
-  } else if(reviewRating = "4") {
+  } else if(rating == "4 stars") {
     return Ember.String.htmlSafe('<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>');
-  } else if(reviewRating = "3") {
+  } else if(rating == "3 stars") {
     return Ember.String.htmlSafe('<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>');
-  } else if(reviewRating = "2") {
+  } else if(rating == "2 stars" ) {
     return Ember.String.htmlSafe('<i class="fa fa-star"></i><i class="fa fa-star"></i>');
   } else {
     return Ember.String.htmlSafe('<i class="fa fa-star"></i>');

@@ -1,7 +1,6 @@
 TO DO:
 
-
-- change review rating to stars?
+- average rating?
 - fix button on detail page so remove from cart button pops up after adding
 
 
